@@ -4,7 +4,7 @@ Donate link: https://neuropassenger.ru/
 Tags: comments, spam
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,10 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.3.1 =
+
+- Fixed a critical error when running an older version of Events Manager Pro.
 
 = 1.3.0 =
 

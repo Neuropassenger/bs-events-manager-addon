@@ -16,4 +16,19 @@ class Bs_Events_Manager_Addon_Service {
         fwrite( $file, $text );
         fclose( $file );
     }
+
+    public static function is_plugin_version_greater_than( $plugin_path, $version = '3.2' ) {
+		if ( ! function_exists( 'get_plugins' ) || ! function_exists( 'is_plugin_active' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+		
+		$installed_plugins = get_plugins();
+	
+		if ( is_plugin_active( $plugin_path ) && isset( $installed_plugins[$plugin_path] ) ) {
+			$installed_version = $installed_plugins[$plugin_path]['Version'];
+			return version_compare( $installed_version, $version, '>' );
+		}
+	
+		return false;
+	}
 }

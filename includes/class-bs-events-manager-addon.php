@@ -78,7 +78,6 @@ class Bs_Events_Manager_Addon {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
-
 	}
 
 	/**
@@ -210,6 +209,14 @@ class Bs_Events_Manager_Addon {
 	 * @since    1.0.0
 	 */
 	public function run() {
+		// The plugin should only work with Events Manager version older than 3.2
+		$upper_version = Bs_Events_Manager_Addon_Service::is_plugin_version_greater_than( 'events-manager-pro/events-manager-pro.php', '3.2' );
+		if ( ! $upper_version ) return;
+		
+		// and New Gateways API
+		$legacy = EM_Options::site_get('legacy-gateways', false) || em_constant('EMP_GATEWAY_LEGACY');
+		if ( $legacy ) return;
+		
 		$this->loader->run();
 	}
 
