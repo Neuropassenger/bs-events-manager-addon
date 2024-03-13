@@ -184,6 +184,8 @@ class Bs_Events_Manager_Addon {
             $this->loader->add_action('wp_ajax_get_em_payment_gateways', $plugin_admin, 'ajax_em_payment_methods');
             $this->loader->add_action('wp_ajax_generate_single_email_template', $plugin_admin, 'ajax_generate_single_email_template');
         }
+
+		$this->loader->add_action( 'plugins_loaded', $plugin_admin, 'check_plugin_updates' );
 	}
 
 	/**

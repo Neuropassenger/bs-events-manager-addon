@@ -913,4 +913,17 @@ class Bs_Events_Manager_Addon_Admin {
         wp_send_json( $response );
     }
 
+    public function check_plugin_updates() {
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'plugin-update-checker/plugin-update-checker.php';
+        
+        $update_checker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+            'https://github.com/Neuropassenger/bs-events-manager-addon',
+            __FILE__,
+            'bs-events-manager-addon'
+        );
+
+        // Set the branch that contains the stable release.
+        $update_checker->setBranch( 'main' );
+    }
+
 }
