@@ -31,16 +31,16 @@
     $( window ).load(function() {
         const selectElem = $('section.em-booking-form-section-confirm select.em-payment-gateway-options');
         selectElem.prepend('<option value="unselected" disabled>- Wählen Sie eine Zahlungsmethode aus -</option>');
-        // Получаем элемент формы бронирования
+        // Getting the booking form element
         const booking_form = $('form.em-booking-form[name="booking-form"]');
 
-        // Добавляем обработчик события 'em_booking_intent_updated'
+        // Add 'em_booking_intent_updated' event handler
         booking_form.on("em_booking_intent_updated", function(e) {
             if (selectElem.is(":visible")) {
-                // Если элемент виден
+                // If the item is visible
                 selectElem.val('unselected');
             } else {
-                // Если элемент не виден, отменить выбор
+                // If the item is not visible, deselect
                 selectElem.prop('selectedIndex', 1);
             }
         });

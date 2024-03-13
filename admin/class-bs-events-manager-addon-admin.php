@@ -137,10 +137,6 @@ class Bs_Events_Manager_Addon_Admin {
     public function add_payment_gateway_placeholder( $content, $EM_Event, $tag ) {
         if( $tag == '#_BS_PAYMENTGATEWAY' ){
             $content = __( 'none', 'bs-events-manager-addon' );
-            /*BWS_Dev::logit( array(
-                'post' => $_POST,
-                'get' => $_GET
-            ), '[INFO]: add_payment_gateway_placeholder' );*/
 
             if ( ! get_option( 'dbem_multiple_bookings' ) ) {
                 if ( isset( $_POST['booking_id'] ) ) {
@@ -159,17 +155,6 @@ class Bs_Events_Manager_Addon_Admin {
                 $dev_booking = em_get_booking( $_REQUEST['booking_id'] );
                 $user_id = get_current_user_id();
                 $current_booking = $bookings->has_booking( $user_id );
-                /*BWS_Dev::logit( array(
-                    'content'           =>  $content,
-                    'bookings'          =>  $bookings,
-                    'dev_booking'       =>  $dev_booking,
-                    'EM_Event'          =>  $EM_Event,
-                    'tag'               =>  $tag,
-                    'user_id'           =>  $user_id,
-                    'current_booking'   =>  $current_booking,
-                    'gateway'           =>  $current_booking->booking_meta['gateway'],
-                    'request'           =>  $_REQUEST
-                ), '[INFO]: add_payment_gateway_placeholder' );*/
                 if ( isset( $current_booking->booking_meta['gateway'] ) ) {
                     $content = Bs_Events_Manager_Addon_Booking_Helper::get_gateway_title_by_system_slug( $current_booking->booking_meta['gateway'] );
                 }
@@ -205,7 +190,7 @@ class Bs_Events_Manager_Addon_Admin {
      * Shows all bookings made by one person.
      */
     function em_short_bookings_person() {
-        global $EM_Person, $EM_Notices;
+        global $EM_Person;
         $EM_Person->get_bookings();
         $has_booking = false;
         foreach($EM_Person->get_bookings() as $EM_Booking){
