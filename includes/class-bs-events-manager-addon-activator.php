@@ -34,6 +34,7 @@ class Bs_Events_Manager_Addon_Activator {
 
         $addon_settings['booking_attendee_info'] = 'off';
         $addon_settings['gateway_readable_names'] = 'off';
+        $addon_settings['select_payment_gateway'] = 'off';
         $addon_settings['gateway_placeholder'] = 'off';
         $addon_settings['dynamic_email_templates'] = 'off';
         $addon_settings['collapse_email_templates'] = 'off';

@@ -98,7 +98,8 @@ class Bs_Events_Manager_Addon_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bs-events-manager-addon-public.js', array( 'jquery' ), $this->version, false );
 
-		if ( is_singular( 'event' ) ) {
+		$addon_settings = get_option( 'bs_em_addon_settings' );
+		if ( is_singular( 'event' ) && isset( $addon_settings['select_payment_gateway'] ) && $addon_settings['select_payment_gateway'] == 'on' ) {
 			wp_enqueue_script(
 				$this->plugin_name . '_booking-form',
 				plugin_dir_url( __FILE__ ) . 'js/bs-events-manager-addon-public-booking-form.js',

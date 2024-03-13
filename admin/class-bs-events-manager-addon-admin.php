@@ -318,6 +318,17 @@ class Bs_Events_Manager_Addon_Admin {
                     </p>
                 </td>
             </tr>
+            <tr>
+                <th scope="row">
+                    <?php _e( 'Select a payment method option', 'bs-events-manager-addon' ); ?>
+                </th>
+                <td>
+                    <input name="bs_em_addon_settings[select_payment_gateway]" type="checkbox" <?php checked( $addon_settings['select_payment_gateway'], 'on' ); ?>>
+                    <p>
+                        <?php _e( 'Add a default option (placeholder) when selecting a payment gateway on the booking page instead of selecting some option for the user.', 'bs-events-manager-addon' ); ?>
+                    </p>
+                </td>
+            </tr>
             </tbody>
         </table>
         <?php
