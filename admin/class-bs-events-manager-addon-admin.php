@@ -193,22 +193,22 @@ class Bs_Events_Manager_Addon_Admin {
         global $EM_Person;
         $EM_Person->get_bookings();
         $has_booking = false;
-        foreach($EM_Person->get_bookings() as $EM_Booking){
-            if($EM_Booking->can_manage('manage_bookings','manage_others_bookings')) {
+        foreach( $EM_Person->get_bookings() as $EM_Booking ){
+            if( $EM_Booking->can_manage( 'manage_bookings','manage_others_bookings' ) ) {
                 $has_booking = true;
             }
         }
-        if( !$has_booking && !current_user_can('manage_others_bookings') ) {
+        if( ! $has_booking && !current_user_can( 'manage_others_bookings' ) ) {
             ?>
-            <div class="wrap"><h2><?php esc_html_e('Unauthorized Access','events-manager'); ?></h2><p><?php esc_html_e('You do not have the rights to manage this event.','events-manager'); ?></p></div>
+            <div class="wrap"><h2><?php esc_html_e( 'Unauthorized Access','events-manager' ); ?></h2><p><?php esc_html_e( 'You do not have the rights to manage this event.','events-manager' ); ?></p></div>
             <?php
             return false;
         }
         ?>
         <div class='wrap'>
             <br style="clear:both;" />
-            <?php do_action('em_bookings_person_body_1'); ?>
-            <h2><?php esc_html_e('Past And Present Bookings','events-manager'); ?></h2>
+            <?php do_action( 'em_bookings_person_body_1' ); ?>
+            <h2><?php esc_html_e( 'Past And Present Bookings','events-manager' ); ?></h2>
             <?php
             $EM_Bookings_Table = new EM_Bookings_Table();
             $EM_Bookings_Table->status = 'all';
