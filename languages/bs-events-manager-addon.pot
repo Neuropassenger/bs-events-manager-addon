@@ -1,0 +1,221 @@
+# Copyright (C) 2022 Oleg Sokolov
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: BS Events Manager Add-On 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bs-events-manager-addon\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-05-22T15:18:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: bs-events-manager-addon\n"
+
+#. Plugin Name of the plugin
+msgid "BS Events Manager Add-On"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://neuropassenger.ru/poleznoe/"
+msgstr ""
+
+#. Description of the plugin
+msgid "This is a short description of what the plugin does. It's displayed in the WordPress admin area."
+msgstr ""
+
+#. Author of the plugin
+msgid "Oleg Sokolov"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://neuropassenger.ru/"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:101
+msgid "Are you sure? The current field value will be deleted."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:110
+msgid "Generate all Custom Email Templates"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:111
+msgid "Generate this Custom Email Template"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:112
+msgid "Are you sure? Template generation will erase existing field values."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:113
+msgid "Are you sure? Template generation will erase existing custom email templates. It will take about 30 seconds."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:135
+#: includes/class-bs-events-manager-addon-booking-helper.php:16
+msgid "none"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:230
+msgid "Settings Saved"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:253
+msgid "Navigation"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:255
+#: admin/class-bs-events-manager-addon-admin.php:274
+msgid "Tweaks"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:256
+#: admin/class-bs-events-manager-addon-admin.php:307
+msgid "Placeholders"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:257
+#: admin/class-bs-events-manager-addon-admin.php:328
+msgid "Email Templates"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:259
+#: admin/class-bs-events-manager-addon-admin.php:354
+msgid "Location Information"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:260
+#: admin/class-bs-events-manager-addon-admin.php:358
+msgid "Default or Free Booking Emails"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:279
+msgid "Booking and Attendee Information"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:284
+msgid "Display Booking and Attendee information when opening a user profile via a link from the list of transactions."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:290
+msgid "Readable names of payment gateways"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:295
+msgid "Display in the list of transactions the names of payment gateways from the settings instead of the system name."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:312
+msgid "Payment gateway placeholder"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:317
+msgid "Enable placeholder for payment gateway output in emails. Use #_BS_PAYMENTGATEWAY."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:333
+msgid "Enable dynamic email template generation"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:341
+msgid "Collapse email templates"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:346
+msgid "Automatically collapse the section with email templates when editing an event."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:355
+msgid "Here you can specify templates that will be used to display information about a location of an event. Each field is used to display a specific type of location."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:359
+#: admin/class-bs-events-manager-addon-admin.php:376
+msgid "Enter email subject lines. Specify Header content and Footer content for emails. Subsequently, generated content with Events Manager placeholders will be inserted between the Header and Footer based on the selected Booking and Attendee forms."
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:362
+#: admin/class-bs-events-manager-addon-admin.php:379
+msgid "Owner"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:366
+#: admin/class-bs-events-manager-addon-admin.php:383
+msgid "Attendee"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:375
+#: admin/class-bs-events-manager-addon-admin.php:439
+msgid "Gateway Emails"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:422
+msgid "Copy from the Free Booking Emails section"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:428
+msgid "Clear"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:449
+msgid "URL"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:456
+#: admin/class-bs-events-manager-addon-admin.php:479
+#: admin/class-bs-events-manager-addon-admin.php:502
+#: admin/class-bs-events-manager-addon-admin.php:525
+msgid "Content"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:472
+msgid "Zoom Room"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:495
+msgid "Zoom Meeting"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:518
+msgid "Zoom Webinar"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:545
+msgid "Pending Booking Email"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:552
+#: admin/class-bs-events-manager-addon-admin.php:602
+#: admin/class-bs-events-manager-addon-admin.php:652
+#: admin/class-bs-events-manager-addon-admin.php:713
+msgid "Subject"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:566
+#: admin/class-bs-events-manager-addon-admin.php:616
+#: admin/class-bs-events-manager-addon-admin.php:666
+#: admin/class-bs-events-manager-addon-admin.php:727
+msgid "Header"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:578
+#: admin/class-bs-events-manager-addon-admin.php:628
+#: admin/class-bs-events-manager-addon-admin.php:678
+#: admin/class-bs-events-manager-addon-admin.php:739
+msgid "Footer"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:595
+msgid "Confirmed Booking Email"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:645
+msgid "Booking Cancelled Email"
+msgstr ""
+
+#: admin/class-bs-events-manager-addon-admin.php:706
+msgid "Awaiting Payment Email"
+msgstr ""

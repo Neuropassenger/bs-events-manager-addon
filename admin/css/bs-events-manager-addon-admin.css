@@ -1,0 +1,96 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*.bs_em-addon-settings-form h3.bs_email-template-header {
+    margin-top: 30px;
+}*/
+
+.bs_em-addon-settings-form h4 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/*.bs_em-addon-settings-form h4.bs_owner-header {
+    color: #1f37c6;
+}
+
+.bs_em-addon-settings-form h4.bs_attendee-header {
+    color: #0f9520;
+}*/
+.bs_em-addon-settings-form h5.bs_pending-email-header {
+    color: #296dbb;
+}
+
+.bs_em-addon-settings-form h5.bs_confirmed-email-header {
+    color: #0aac38;
+}
+
+.bs_em-addon-settings-form h5.bs_cancelled-email-header {
+    color: #a31717;
+}
+
+.bs_em-addon-settings-form h5.bs_awaiting-email-header {
+    color: #d5783b;
+}
+
+.bs_em-addon-settings-form h5 {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+table.bs_email-template-settings {
+    /*margin-left: 30px;*/
+}
+
+.bs_em-addon-settings-form .bs_email-template-settings thead th {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+table.bs_email-template-settings input,
+table.bs_email-template-settings textarea {
+    width: 500px;
+}
+
+table.bs_email-template-settings textarea {
+    height: 250px;
+}
+
+.bs_settings-page-container {
+    display: flex;
+}
+
+.bs_settings-page-content {
+    margin-right: 220px;
+}
+
+.bs_settings-page-navigation {
+    position: fixed;
+    right: 0;
+    max-width: 200px;
+    padding-right: 20px;
+}
+
+.bs_settings-page-navigation ul {
+    list-style: initial;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+#em-event-bookings .bs_generate-all-email-templates-button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#em-event-custom-emails .bs_generate-single-email-template-button {
+    float: right;
+    margin-right: 10px;
+}
+
+.emp-cet-subgroup-email {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
