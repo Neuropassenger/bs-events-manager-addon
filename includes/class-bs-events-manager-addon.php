@@ -214,7 +214,11 @@ class Bs_Events_Manager_Addon {
 		if ( ! $upper_version ) return;
 		
 		// and New Gateways API
-		$legacy = EM_Options::site_get('legacy-gateways', false) || em_constant('EMP_GATEWAY_LEGACY');
+        $dbem_settings = get_option( 'dbem_data' );
+        if ( empty( $dbem_settings ) ) return;
+        $legacy = $dbem_settings['legacy-gateways'] ?? false;
+        $legacy_constant = defined( 'EMP_GATEWAY_LEGACY' ) ? EMP_GATEWAY_LEGACY : null;
+		$legacy = $legacy || $legacy_constant;
 		if ( $legacy ) return;
 		
 		$this->loader->run();
