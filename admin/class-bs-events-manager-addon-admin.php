@@ -914,11 +914,11 @@ class Bs_Events_Manager_Addon_Admin {
     }
 
     public function check_plugin_updates() {
-        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'plugin-update-checker/plugin-update-checker.php';
+        require_once( plugin_dir_path( dirname( __FILE__ ) ) . 'plugin-update-checker/plugin-update-checker.php' );
         
         $update_checker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
-            'https://github.com/Neuropassenger/bs-events-manager-addon',
-            __FILE__,
+            'https://github.com/Neuropassenger/bs-events-manager-addon/',
+            plugin_dir_path( dirname( __FILE__ ) ) . 'bs-events-manager-addon.php',
             'bs-events-manager-addon'
         );
 
