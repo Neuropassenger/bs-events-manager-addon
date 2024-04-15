@@ -4,7 +4,7 @@ Donate link: https://neuropassenger.ru/
 Tags: events, events-manager, addon, emails, booking
 Requires at least: 6.4.3
 Tested up to: 6.4.3
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,10 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.3.4 =
+
+- Fixed JS error on the Bookings Page.
 
 = 1.3.3 =
 

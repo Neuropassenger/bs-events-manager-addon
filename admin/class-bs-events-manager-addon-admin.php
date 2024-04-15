@@ -132,6 +132,12 @@ class Bs_Events_Manager_Addon_Admin {
             }
         }
 
+        // Register Moment.js (Fix for Bookings Page)
+        wp_register_script( 'moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js', array(), '2.29.1', true );
+
+        // Include Moment.js
+        wp_enqueue_script( 'moment' );
+
 	}
 
     public function add_payment_gateway_placeholder( $content, $EM_Event, $tag ) {
