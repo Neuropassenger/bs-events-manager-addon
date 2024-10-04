@@ -1,6 +1,8 @@
 <?php
 if( !class_exists( 'EM_Gateways_Transactions' ) ) {
     class EM_Gateways_Transactions {
+        private $order, $orderby, $page, $gateway;
+
         var $limit = 20;
         var $total_transactions = 0;
 
