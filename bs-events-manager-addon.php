@@ -16,7 +16,7 @@
  * Plugin Name:       BS Events Manager Add-On
  * Plugin URI:        https://github.com/Neuropassenger/bs-events-manager-addon/
  * Description:       The plugin adds the ability to view booking details when opening a user profile via a link from the list of transactions. Adds a placeholder to display a payment gateway. Improves readability for payment gateway names in the transaction list. Adds functionality to quickly and automatically generate Custom Email Templates.
- * Version:           1.3.5
+ * Version:           1.3.6
  * Author:            Oleg Sokolov
  * Author URI:        https://neuropassenger.ru/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'BS_EVENTS_MANAGER_ADDON_VERSION', '1.3.5' );
+define( 'BS_EVENTS_MANAGER_ADDON_VERSION', '1.3.6' );
 
 /**
  * The code that runs during plugin activation.
